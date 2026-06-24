@@ -1,3 +1,6 @@
 class Solution:
     def sortedSquares(self, nums: List[int]) -> List[int]:
-        return sorted(x * x for x in nums)
+        result=[num**2 for num in nums]
+        result.sort()
+        return result
+        
